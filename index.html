@@ -5,9 +5,70 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title></title>
+  <title>Survey Practice</title>
 </head>
 <body>
-  
+  <div class="container">
+      <h1>Tell me about yourself!</h1>
+
+      <form id="userInfo">
+        <div class="form-group">
+          <label for="name">What's your name?</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="b-day">What's your date of birth?</label>
+          <input id="b-day" class="form-control" type="date">
+        </div>
+
+        <div class="form-group">
+          <label for="animal">Favorite animal?</label>
+          <select class="form-control" id="animal">
+            <option>Dogs</option>
+            <option>Cats</option>
+            <option>Turtles</option>
+            <option>Rabbits</option>
+            <option>Pigs</option>
+            <option>Fish</option>
+          </select>
+        </div>
+
+        <div class="card form-group">
+          <p>What about your favorite music? :</p>
+          <div class="radio">
+            <label for="Hip-hop">Hip-hop</label>
+            <input type="radio" id="Hip-hop" value="hip-hop" checked>
+          </div>
+
+          <div class="radio">
+            <label for="Rock">Rock</label>
+            <input type="radio" id="Rock" value="rock">
+          </div>
+
+          <div class="radio">
+            <label for="Jazz">Jazz</label>
+            <input type="radio" id="Jazz" value="jazz">
+          </div>
+
+          <div class="radio">
+            <label for="R&B">R&B</label>
+            <input type="radio" id="R&B" value="r&b">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="color">And your favorite color!?</label>
+          <input class="form-control" id="color" type="color">
+        </div>
+
+        <button class="btn btn-success">Submit</button>
+      </form>
+
+      <div class="output">
+
+      </div>
+  </div>
+
 </body>
 </html>
